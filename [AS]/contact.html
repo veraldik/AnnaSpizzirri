@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <title>[AS]</title>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
+    <link type="text/css" rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <a id="logo1" onmouseover="expandFunction()" onmouseout="collapseFunction()" href="index.html">[AS]</a>
+      </div>
+      <div id="right">
+        <a class="navItem" href="projects.html">Projects</a>
+        <a class="navItem" href="contact.html">Contact</a>
+        <a class="navItem" href="#">About</a>
+      </div>
+    </div>
+    <p>
+      Have an idea? Let's talk.
+    </p>
+    <div id="form-messages"></div>
+    <form id="ajax-contact" method="post" action="mailer.php">
+      <div class="field">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="field" id="wrapper">
+        <button type="submit">Send</button>
+      </div>
+    </form>
+
+  <script>
+    function expandFunction () {
+      document.getElementById("logo1").innerHTML = "[Anna Spizzirri]";
+    }
+
+    function collapseFunction () {
+      document.getElementById("logo1").innerHTML = "[AS]";
+    }
+  </script> 
+  <script src="jquery-2.1.0.min.js"></script>
+  <script src="app.js"></script>
+  </body>
+</html>   

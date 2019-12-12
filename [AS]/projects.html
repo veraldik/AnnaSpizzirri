@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <title>[AS]</title>
+    <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans">
+    <link type="text/css" rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <a id="logo1" onmouseover="expandFunction()" onmouseout="collapseFunction()" href="index.html">[AS]</a>
+      </div>
+      <div id="right">
+        <a class="navItem" href="projects.html">Projects</a>
+        <a class="navItem" href="contact.html">Contact</a>
+        <a class="navItem" href="#">About</a>
+      </div>
+    <div class="content" id="content">
+        <div class="piece">
+          <img src="media/OPI.png" class="image">
+          <div class="overlay"></div>
+        </div>
+        <div class="piece">
+          <img src="media/passionproj.png" class="image">
+        </div>
+        <div class="piece">
+          <img src="media/easterseals.png" class="image">
+        </div>
+        <div class="piece">
+          <img src="media/stamps.png" class="image">
+        </div>
+        <div class="piece">
+          <img src="media/mobil.png" class="image">
+        </div>
+        <div class="piece">
+          <img src="media/pet.png" class="image">
+        </div>
+      </div>
+      
+  <script>
+    function expandFunction () {
+      document.getElementById("logo1").innerHTML = "[Anna Spizzirri]";
+    }
+
+    function collapseFunction () {
+      document.getElementById("logo1").innerHTML = "[AS]";
+    }
+  </script> 
+  </body>
+</html>   
